@@ -17,19 +17,16 @@ namespace ValidateUrl
             StatusCode = new StatusCode { IsValid = false };
             try
             {
-                HttpResponseMessage result = Task.Run( () => Client.GetAsync(uri)).Result;
-                 StatusCode.Message = result.StatusCode;
+                HttpResponseMessage result = await Client.GetAsync(uri);
+               //  StatusCode.Message = result.StatusCode;
             }
-            catch (AggregateException ae)
+            catch (HttpRequestException e)
             {
-                foreach (var e in ae.InnerExceptions)
-                {                    
                     if (e.Message.Contains("No such host is known"))
                     {
                         StatusCode.Message = HttpStatusCode.NotFound;
                         return StatusCode;
                     }
-                }
                 StatusCode.Message = HttpStatusCode.BadRequest;
                 return StatusCode;
 

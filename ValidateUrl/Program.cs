@@ -7,7 +7,7 @@ namespace ValidateUrl
         static async System.Threading.Tasks.Task Main(string[] args)
         {
 
-            Console.WriteLine(await Validate.IsValidUriAsync(new Uri("chalmers.se")));
+            Console.WriteLine(await Validate.IsValidUriAsync(new Uri("http://chalmersergegh.se")));
         }
     }
 }
