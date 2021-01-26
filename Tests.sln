@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{0B2DA76A-D388-418E-8518-930595BBA528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateUrl", "ValidateUrl\ValidateUrl.csproj", "{EC486B3A-0EC8-4565-B501-9771F5CA38C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidateUrl", "ValidateUrl\ValidateUrl.csproj", "{EC486B3A-0EC8-4565-B501-9771F5CA38C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddUrlLicenseScript", "AddUrlLicenseScript\AddUrlLicenseScript.csproj", "{F3C6EC16-B39B-4949-9A00-0B7632ECA78D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EC486B3A-0EC8-4565-B501-9771F5CA38C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC486B3A-0EC8-4565-B501-9771F5CA38C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC486B3A-0EC8-4565-B501-9771F5CA38C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C6EC16-B39B-4949-9A00-0B7632ECA78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C6EC16-B39B-4949-9A00-0B7632ECA78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C6EC16-B39B-4949-9A00-0B7632ECA78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C6EC16-B39B-4949-9A00-0B7632ECA78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
